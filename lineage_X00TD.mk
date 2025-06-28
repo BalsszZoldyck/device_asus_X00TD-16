@@ -12,19 +12,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit some common crDroid stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# EvoX flags.
+BUILD_BCR := true
+EVO_BUILD_TYPE := Unofficial
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_ACCORD := false
+TARGET_SUPPORT_BOOT_ANIMATIONS := true
+
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-TARGET_BUILD_DEVICE_AS_WEBCAM := true
-
+# GApps flags.
+TARGET_USES_MINI_GAPPS := false
 WITH_GMS := false
 
 # Inherit some common device props
-TARGET_FACE_UNLOCK_SUPPORTED := true
+FULL_SYSTEM_OPTIMIZE_JAVA := true
 SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
-TARGET_EXCLUDES_AUDIOFX := true
-TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_X00TD
