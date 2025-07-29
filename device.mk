@@ -32,6 +32,7 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
+    NcmTetheringOverlay \
     X00TDWifiOverlay
 
 # Inherit the proprietary files
