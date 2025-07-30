@@ -351,6 +351,12 @@
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
       "Value": "633600"
+    },
+    {
+      "PowerHint": "DOUBLE_TAP_TO_WAKE",
+      "Node": "DoubleTapToWake",
+      "Duration": 0,
+      "Value": "1"
     }
   ]
 }
