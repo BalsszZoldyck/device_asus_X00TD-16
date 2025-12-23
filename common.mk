@@ -1,0 +1,6 @@
+# Avium Flags
+AVIUM_BUILDTYPE := Unoffical
+AVIUM_VERSION_APPEND_TIME_OF_DAY := false
+AVIUM_MAINTAINER := BllsszzXD 
+
+WITH_GMS := false
