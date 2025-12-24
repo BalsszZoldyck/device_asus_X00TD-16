@@ -15,6 +15,11 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# OrionOs
+ORION_MAINTAINER := BllsszzXD 
+ORION_GAPPS := false
+TARGET_ENABLE_BLUR := false
+
 # Inherit some common device props
 TARGET_BOOT_ANIMATION_RES := 1080
 FULL_SYSTEM_OPTIMIZE_JAVA := true
