@@ -18,6 +18,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Maintainer
 MIKU_MASTER := BllsszzXD
 MIKU_BUILD_TYPE := UNOFFICIAL
+MIKU_GAPPS := false
 
 # Inherit some common device props
 TARGET_BOOT_ANIMATION_RES := 1080
