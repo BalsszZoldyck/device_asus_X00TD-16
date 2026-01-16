@@ -9,11 +9,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common crDroid stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common MikuStuff stuff
+$(call inherit-product, vendor/miku/build/product/miku_product.mk)
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
+
+# Maintainer
+MIKU_MASTER := BllsszzXD
 
 # Inherit some common device props
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -22,7 +25,7 @@ SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_X00TD
+PRODUCT_NAME := miku_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
