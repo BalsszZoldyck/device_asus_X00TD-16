@@ -17,7 +17,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some common device props
 INFINITY_BUILD_TYPE := UNOFFICIAL
-INFINITY_MAINTAINER := BllsszzXD
+INFINITY_MAINTAINER := BllsszzXD X Yaseakun
 FULL_SYSTEM_OPTIMIZE_JAVA := true
 SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
