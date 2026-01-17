@@ -15,13 +15,14 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# OrionOs
-ORION_MAINTAINER := BllsszzXD 
-ORION_GAPPS := false
+# Evolution-X Build Flags
+EVO_BUILD_TYPE := Unofficial
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_ACCORD := false
 TARGET_ENABLE_BLUR := false
 
 # Inherit some common device props
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_DISABLE_EPPE := true
 FULL_SYSTEM_OPTIMIZE_JAVA := true
 SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
