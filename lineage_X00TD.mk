@@ -15,14 +15,17 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Evolution-X Build Flags
-EVO_BUILD_TYPE := Unofficial
+#Lunaris flags
+LUNARIS_BUILD_TYPE := UNOFFICIAL
+TARGET_USES_CORE_GAPPS := true
+WITH_BCR := true
+TARGET_CUSTOM_UDFPS := false
+TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_ACCORD := false
-TARGET_ENABLE_BLUR := false
 
 # Inherit some common device props
 TARGET_DISABLE_EPPE := true
+TARGET_BUILD_DEVICE_AS_WEBCAM := true
 FULL_SYSTEM_OPTIMIZE_JAVA := true
 SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
