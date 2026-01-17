@@ -17,11 +17,14 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 #Lunaris flags
 LUNARIS_BUILD_TYPE := UNOFFICIAL
-TARGET_USES_CORE_GAPPS := true
+TARGET_USES_OMNI_GAPPS :=true
 WITH_BCR := true
 TARGET_CUSTOM_UDFPS := false
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+ro.lunaris.maintainer=BllsszzXD
 
 # Inherit some common device props
 TARGET_DISABLE_EPPE := true
