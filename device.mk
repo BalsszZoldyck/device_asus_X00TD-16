@@ -7,8 +7,6 @@
 # Inherit from sdm660-common
 $(call inherit-product, device/asus/sdm660-common/sdm660.mk)
 
-$(call inherit-product-if-exists, vendor/lineage-priv/keys/keys.mk)
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
@@ -36,6 +34,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NcmTetheringOverlay \
     X00TDWifiOverlay
+
+-include vendor/lineage-priv/keys/keys.mk
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/asus/X00TD/X00TD-vendor.mk)
